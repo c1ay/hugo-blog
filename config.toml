@@ -1,0 +1,53 @@
+baseURL = "c1ay.cc"
+languageCode = "en-us"
+title = "c1ay"
+author = "c1ay"
+theme = "hugo-goa"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+## Hugo Built-in Features
+disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+
+[params]
+author = "c1ay"
+intro = "c1ay home"
+description = "web pythoner django, flask, celery"
+authorimage = "header.png"
+dateformat = "Jan 2, 2006"
+
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer,python,pythoner,pythonic"
+
+[params.social]
+github = "c1ay"
+instagram = "<username>"
+linkedin = "<username>"
+twitter = "<username>"
+facebook = "<username>"
+google = "liukaiash"
+stackoverflow = "<username>"
+email = "c1ay@c1ay.cc"
+
+[params.extra]
+copyright = "© 2016. c1ay. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)." 
+poweredby = true
+hightlightjs = true
+
+
+[[menu.main]]
+    name = "post"
+    weight = 100
+    identifier = "post"
+    url = "/post/"
+[[menu.main]]
+    name = "about"
+    weight = 200
+    identifier = "about"
+    url = "/about/"
