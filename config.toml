@@ -10,9 +10,9 @@ publishdir = "public"
 
 canonifyurls        = true
 pygmentsuseclasses  = true
-disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
+disqusshortname     = "c1ay" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = "UA-123-45"
+googleAnalytics     = ""
 
 [permalinks]
 fixed = ":title/"
@@ -29,8 +29,8 @@ faviconfile  = "img/header.png"
 github       = "//github.com/c1ay"
 highlightjs  = true
 lang         = "en"
-linkedin     = "//linkedin.com/in/liukai"
-twitter      = "//twitter.com/you"
+linkedin     = "//linkedin.com/in/c1ay1024"
+twitter      = "//twitter.com/kaka826"
 selfIntro    = "" # appears in the site header when set to a non-empty string
 
 # gravatar             = ""                # do not use in the same time as avatar
