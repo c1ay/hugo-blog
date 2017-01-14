@@ -13,4 +13,4 @@ deploy:
         branch: master
         basedir: public
         clean_removed_files: true
-        tag: test
+        tag: new
