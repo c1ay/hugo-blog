@@ -13,4 +13,5 @@ deploy:
         gh_pages: true
         branch: master
         basedir: public
+        clean_removed_files: true
         tag: test
