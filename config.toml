@@ -30,7 +30,7 @@ github       = "//github.com/c1ay"
 highlightjs  = true
 lang         = "en"
 linkedin     = "//linkedin.com/in/c1ay1024"
-twitter      = "//twitter.com/kaka826"
+twitter      = "//twitter.com/kaka_826"
 selfIntro    = "" # appears in the site header when set to a non-empty string
 
 # gravatar             = ""                # do not use in the same time as avatar

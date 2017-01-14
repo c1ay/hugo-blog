@@ -5,4 +5,8 @@ draft = true
 
 +++
 
-First article which using `hugo`
+## 使用hugo
+
+## 踩坑
+
+## 使用`CI`(持续集成)
