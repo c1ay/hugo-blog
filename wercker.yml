@@ -5,9 +5,8 @@ build:
         version: "0.14"
         flags: --buildDrafts=true
 deploy:
+  box: samueldebruyn/debian-git
   steps:
-    - install-packages:
-        packages: git ssh-client
     - ysqi/git-push:
         gh_oauth: $GIT_TOKEN
         repo: c1ay/c1ay.github.io
