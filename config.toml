@@ -2,7 +2,7 @@ baseURL = "https://c1ay.github.io"
 languageCode = "en-us"
 title = "c1ay"
 author = "c1ay"
-theme = "hugo-goa"
+theme = "paperback"
 
 contentdir = "content"
 layoutdir = "layouts"
@@ -20,6 +20,28 @@ intro = "c1ay home"
 description = "web pythoner django, flask, celery"
 authorimage = "header.png"
 dateformat = "Jan 2, 2006"
+
+# your name to display by the copyright sign
+# default: undefined
+AuthorName = "c1ay"
+
+# tagline to show beneath homepage h1
+# default: undefined
+Tagline = "Hello, python!"
+
+# number of posts to show on index
+# default: 10
+HomepagePosts = 3
+
+# if set to true, social links will be displayed in the footer
+# default: undefined
+SocialLinks = true
+
+# default: undefined
+GithubUsername = "c1ay"
+
+# default: undefined
+TwitterUsername = "c1ay"
 
 [params.meta]
 description = "Simple minimalist theme"
