@@ -11,6 +11,6 @@ deploy:
     - ysqi/git-push:
         gh_oauth: $GIT_TOKEN
         repo: c1ay/c1ay.github.io
-        gh_page: true
         branch: master
         basedir: public
+        clean_removed_files: true
