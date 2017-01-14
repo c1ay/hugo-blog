@@ -2,16 +2,14 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.14
-        config: config.toml
-        dev_flags: -D -F
-        prod_branches: master
+        version: "0.14"
+        flags: --buildDrafts=true
 deploy:
   steps:
     - install-packages:
         packages: git ssh-client
     - leipert/git-push:
-        token: $GIT_TOKEN
+        gh_oauth: $GIT_TOKEN
         repo: c1ay/c1ay.github.io
         branch: master
         basedir: public
