@@ -2,9 +2,10 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.14"
-        theme: herring-cove
-        flags: --buildDrafts=true
+        version: "0.17"
+        config: config.toml
+        dev_flags: -D -F
+        prod_branches: master
 deploy:
   steps:
     - install-packages:
