@@ -8,7 +8,7 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - leipert/git-push:
+    - ysqi/git-push:
         gh_oauth: $GIT_TOKEN
         repo: c1ay/c1ay.github.io
         gh_page: true
