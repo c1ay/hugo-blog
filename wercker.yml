@@ -2,7 +2,7 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.17"
+        version: "HEAD"
         config: config.toml
         dev_flags: -D -F
         prod_branches: master
@@ -10,7 +10,8 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
+    - leipert/git-push:
         token: $GIT_TOKEN
-        domain: hugo-wercker.ig.nore.me
+        repo: c1ay/c1ay.github.io
+        branch: master
         basedir: public
