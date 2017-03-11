@@ -17,3 +17,5 @@ title = "a simple introduction to computer networking"
 传输控制协议（TCP）让我们有了很方便在两台计算机之间发送文本的错觉。 TCP依赖于较低级别并且可以发送二进制数据，但是现在忽略它：
 
 * **TCP允许我们在计算机之间进行即时消息**
+
+We IM with Telnet, the ‘notepad’ of networking: telnet sends and receives plain text using TCP. It’s a chat client peacefully free of ads and unsolicited buddy requests.
