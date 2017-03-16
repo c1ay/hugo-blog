@@ -13,3 +13,6 @@ title = "zsh to fish"
 |-- | -- | -- |
 | zsh | 插件多，配置丰富 | 插件多了慢 |
 | fish | 开箱即用 | 不兼容bash语法 |
+
+
+### fish配置
