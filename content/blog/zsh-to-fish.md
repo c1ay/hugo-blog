@@ -16,3 +16,5 @@ title = "zsh to fish"
 
 
 ### fish配置
+
+`fish_config`
