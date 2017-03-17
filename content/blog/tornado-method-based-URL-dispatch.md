@@ -1,6 +1,6 @@
 +++
 date = "2016-08-17T14:33:27+08:00"
-title = "tornado method based URL dispatch"
+title = "tornado method-based URL dispatch"
 
 +++
 
