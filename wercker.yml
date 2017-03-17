@@ -2,16 +2,13 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "HEAD"
+        version: "0.14"
         flags: --buildDrafts=true
 deploy:
-  box: samueldebruyn/debian-git
   steps:
-    - ysqi/git-push:
-        gh_oauth: $GIT_TOKEN
-        repo: c1ay/c1ay.github.io
-        gh_pages: true
-        branch: master
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: c1ay.github.io
         basedir: public
-        clean_removed_files: true
-        tag: new
