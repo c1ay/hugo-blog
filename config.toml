@@ -2,7 +2,7 @@ baseURL = "https://c1ay.github.io/"
 languageCode = "en-us"
 title = "c1ay"
 author = "c1ay"
-theme = "cocoa-eh"
+theme = "cocoa"
 
 contentdir = "content"
 layoutdir = "layouts"
