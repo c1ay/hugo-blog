@@ -35,17 +35,40 @@ application = tornado.web.Application([
 
 有没有什么解决方案去处理呢，加上我又很懒，最好`url`也能自己生成. 像这样:
 
-    class Level:
+```python
+class Level:
 
-        def interface_one(self):
-            # 处理 url /level/interface_one 的请求
-            pass
+    def interface_one(self):
+        # 处理 url /level/interface_one 的请求
+        pass
 
-        def interface_two(self):
-            # 处理 url /level/interface_two 的请求
-            pass
+    def interface_two(self):
+        # 处理 url /level/interface_two 的请求
+        pass
+```
 
 #### 解决方案:
+
+最终效果
+```python
+
+class Test(MethodDispatcher):
+
+    def interface_one(self):
+        # 处理 url /test/interface_one 的请求
+        self.write(self.request.path)
+
+    def interface_two(self):
+        # 处理 url /test/interface_two 的请求
+        self.write(self.request.path)
+
+application = tornado.web.Application([
+    (r"/test/.*", Test),
+])
+
+```
+
+`MethodDispatcher` 最终的实现
 
 ```python
 class MethodDispatcher(RequestHandler):
@@ -53,6 +76,7 @@ class MethodDispatcher(RequestHandler):
     allow_methods = ()
 
     def set_default_headers(self):
+        # 这里是允许跨域请求
         origin = None
         if self.request.headers.get('Origin'):
             origin = self.request.headers['Origin']
@@ -71,6 +95,7 @@ class MethodDispatcher(RequestHandler):
         self.set_header('Access-Control-Allow-Credentials', 'true')
 
     def _delist_arguments(self, args):
+        # 将GET 参数转化成 参数
         for arg, value in args.items():
             if len(value) == 1:
                 args[arg] = value[0]
