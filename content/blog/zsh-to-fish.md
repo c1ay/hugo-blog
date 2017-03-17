@@ -9,12 +9,25 @@ title = "zsh to fish"
 
 ### zsh 和 fish 对比
 
-|   | 优点 | 缺点 |
-|-- | -- | -- |
-| zsh | 插件多，配置丰富 | 插件多了慢 |
-| fish | 开箱即用 | 不兼容bash语法 |
+#### zsh 
+
+* 插件多，配置丰富 
+* 插件多了慢 |
+
+#### fish 
+
+* 开箱即用 
+* 不兼容bash语法
+
+#### 我需求的功能
+
+* autosuggestion
+* autojump
+* theme
+* git
 
 
 ### fish配置
 
-`fish_config`
+使用`fish_config`，新开一个网页来配置主题，函数
+![fish_config]("https://c1ay.github.io/static/fish_config.img")
