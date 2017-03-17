@@ -12,7 +12,7 @@ title = "zsh to fish"
 #### zsh 
 
 * 插件多，配置丰富 
-* 插件多了慢 |
+* 插件多了慢
 
 #### fish 
 
@@ -66,7 +66,7 @@ set PATH $PATH /usr/local/bin
 
 这个主题对git的支持很完善
 
-<img src="/img/robbyrussel.png" alt="robbyrussel">
+<img src="/img/robbyrussell.png" alt="robbyrussell">
 
 错误的也会有红色标记， 同时也会根据历史和命令给出建议
 
