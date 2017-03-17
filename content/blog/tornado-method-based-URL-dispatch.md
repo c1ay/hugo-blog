@@ -35,17 +35,15 @@ application = tornado.web.Application([
 
 有没有什么解决方案去处理呢，加上我又很懒，最好`url`也能自己生成. 像这样:
 
-```python
-class Level:
+    class Level:
 
-    def interface_one(self):
-        # 处理 url /level/interface_one 的请求
-        pass
+        def interface_one(self):
+            # 处理 url /level/interface_one 的请求
+            pass
 
-    def interface_two(self):
-        # 处理 url /level/interface_two 的请求
-        pass
-```
+        def interface_two(self):
+            # 处理 url /level/interface_two 的请求
+            pass
 
 #### 解决方案:
 
@@ -69,17 +67,8 @@ class MethodDispatcher(RequestHandler):
             self.set_header('Access-Control-Allow-Origin', origin)
         self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
         self.set_header('Access-Control-Max-Age', 1000)
-        self.set_header('Access-Control-Allow-Headers', 'Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With')
+        self.set_header('Access-Control-Allow-Headers', '*')
         self.set_header('Access-Control-Allow-Credentials', 'true')
-
-    @db_session
-    def get_request_user(self):
-        session = self.get_cookie("session_id")
-        if session:
-            ret = RedisClient().client.get(AUTHEN_TOKEN_KEY % session)
-            if ret:
-                account = RiskAccount.get(account=ret)
-                return account
 
     def _delist_arguments(self, args):
         for arg, value in args.items():
@@ -122,3 +111,5 @@ class MethodDispatcher(RequestHandler):
         self.finish()
 
 ```
+
+> 参考: http://code.activestate.com/recipes/576958/
