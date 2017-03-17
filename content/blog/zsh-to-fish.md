@@ -30,4 +30,6 @@ title = "zsh to fish"
 ### fish配置
 
 使用`fish_config`，新开一个网页来配置主题，函数
-![fish_config]("https://c1ay.github.io/static/fish_config.img")
+
+<img src="img/fish_config.png" alt="fish_config">
+![fish_config]("https://c1ay.github.io/img/fish_config.png")
