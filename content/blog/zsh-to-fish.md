@@ -80,6 +80,6 @@ set PATH $PATH /usr/local/bin
 `git clone https://github.com/edc/bass.git`
 `make install`
 
-使用
+bass使用效果, 这样就可以把以前的脚本迁移过来了
 
 <img src="/img/bass.png" alt="bass">
