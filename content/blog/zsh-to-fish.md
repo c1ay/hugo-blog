@@ -80,6 +80,6 @@ set PATH $PATH /usr/local/bin
 `git clone https://github.com/edc/bass.git`
 `make install`
 
-使用
+bass使用
 
 <img src="/img/bass.png" alt="bass">
