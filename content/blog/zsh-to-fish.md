@@ -75,11 +75,12 @@ set PATH $PATH /usr/local/bin
 
 #### 提供对`bash` 脚本支持
 
+在fishshell里用bass来支持bash脚本
 安装`bass`
 
 `git clone https://github.com/edc/bass.git`
 `make install`
 
-bass使用
+bass使用效果, 这样就可以把以前的脚本迁移过来了
 
 <img src="/img/bass.png" alt="bass">
