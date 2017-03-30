@@ -5,6 +5,7 @@ build:
         version: "0.15"
         flags: --buildDrafts=true
     - script:
+        name: create cname
         code: |
           echo "blog.c1ay.cc" > $WERCKER_OUTPUT_DIR/CNAME
 deploy:
