@@ -7,7 +7,7 @@ build:
     - script:
         name: create cname
         code: |
-          echo "blog.c1ay.cc" > ./CNAME
+          echo "blog.c1ay.cc" > .public/CNAME
 deploy:
   box: samueldebruyn/debian-git
   steps:
