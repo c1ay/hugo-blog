@@ -7,8 +7,7 @@ build:
     - script:
         name: create cname
         code: |
-          ls $WERCKER_OUTPUT_DIR
-          echo "blog.c1ay.cc" > $WERCKER_OUTPUT_DIR/CNAME
+          echo "blog.c1ay.cc" > $WERCKER_OUTPUT_DIR/source/CNAME
 deploy:
   box: samueldebruyn/debian-git
   steps:
