@@ -6,7 +6,7 @@ build:
         flags: --buildDrafts=true
     - script:
         code: |
-          echo "blog.c1ay.cc" > $WERCKER_OUTPUT_DIR
+          echo "blog.c1ay.cc" > $WERCKER_OUTPUT_DIR/CNAME
 deploy:
   box: samueldebruyn/debian-git
   steps:
