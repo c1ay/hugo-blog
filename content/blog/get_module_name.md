@@ -1,6 +1,8 @@
 +++
 date = "2017-05-10T15:00:43+08:00"
 title = "python 中获取当前模块名"
+tags = [ "python", "inspect", "sanic" ]
+series = [ "sanic code" ]
 
 +++
 

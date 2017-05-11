@@ -12,7 +12,7 @@ canonifyurls        = true
 pygmentsuseclasses  = true
 disqusshortname     = "c1ay" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = ""
+googleAnalytics     = "UA-99019463-1"
 
 [permalinks]
 fixed = ":title/"
