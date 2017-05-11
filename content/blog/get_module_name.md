@@ -4,7 +4,7 @@ title = "python 中获取当前模块名"
 
 +++
 
-今天在看[sanic](https://github.com/channelcat/sanic)的实现时，看到 [app.py](https://github.com/channelcat/sanic/blob/master/sanic/app.py#L45)
+今天在看[sanic](https://github.com/channelcat/sanic)的实现时，看到 [app.py](https://github.com/channelcat/sanic/blob/master/sanic/app.py#L45), 其中`stack`和`getmodulename`均从`inspect`模块导入，`inspect`模块主要为`python`提供自省功能。
 
 ```python
 # Get name from previous stack frame
@@ -21,4 +21,4 @@ if name is None:
 FrameInfo(frame=<frame object at 0x7f28a3732828>, filename='test.py', lineno=12, function='<module>', code_context=['print(foo(None))\n'], index=0)
 ```
 
-由此可以获得当前的文件名，代码行数以及当前调用栈，现在能想到的是用在代码调试上。
+由此可以获得当前的文件名，代码行数以及当前调用栈，现在能想到的用途是用在代码调试上。
