@@ -5,4 +5,4 @@ draft = true
 
 +++
 
-Web Pythoner
+Pythonista
